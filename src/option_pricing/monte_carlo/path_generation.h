@@ -32,7 +32,7 @@ void calc_path_spot_prices(std::vector<double>& spot_prices, // Vector of spot p
     double drift = exp(dt * (r - 0.5 * v * v));
     double vol = sqrt(v * v * dt);
 
-    for (int i = 1; i < spot_prices.size(); i++) {
+    for (size_t i = 1; i < spot_prices.size(); i++) {
         double gauss_bm = gaussian_box_muller();
         spot_prices[i] = spot_prices[i-1] * drift * exp(vol * gauss_bm);
     }

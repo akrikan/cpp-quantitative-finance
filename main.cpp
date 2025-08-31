@@ -183,7 +183,7 @@ void demo_random_number_generation() {
     cout << "  Number of draws: " << num_draws << endl;
     cout << "  Initial seed: " << init_seed << endl;
     cout << "\nUniform draws (0,1):\n";
-    for (int i = 0; i < num_draws; i++) {
+    for (unsigned long i = 0; i < num_draws; i++) {
         cout << "  Draw " << setw(2) << i+1 << ": " 
              << fixed << setprecision(6) << uniform_draws[i] << endl;
     }
@@ -194,7 +194,7 @@ void demo_random_number_generation() {
     snd.random_draws(uniform_draws, normal_draws);
     
     cout << "\nNormal draws (mean=0, std=1):\n";
-    for (int i = 0; i < num_draws; i++) {
+    for (unsigned long i = 0; i < num_draws; i++) {
         cout << "  Draw " << setw(2) << i+1 << ": " 
              << fixed << setprecision(6) << normal_draws[i] << endl;
     }

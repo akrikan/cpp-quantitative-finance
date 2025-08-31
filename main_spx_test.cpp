@@ -207,9 +207,9 @@ void test_implied_volatility(const MarketData& market) {
     auto& chain = market.option_chains.at(test_expiry);
     
     // Find an ATM call option
-    OptionData* atm_call = nullptr;
+    const OptionData* atm_call = nullptr;
     double min_diff = 1e9;
-    for (auto& opt : chain) {
+    for (const auto& opt : chain) {
         if (opt.type == 'C') {
             double diff = abs(opt.strike - market.spot_price);
             if (diff < min_diff) {

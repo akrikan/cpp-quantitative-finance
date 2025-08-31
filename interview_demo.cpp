@@ -318,7 +318,7 @@ public:
         cout << "\nRISK METRICS:\n\n";
         
         // Calculate portfolio Greeks
-        double total_delta = 0, total_gamma = 0, total_vega = 0, total_value = 0;
+        double total_delta = 0, total_gamma = 0, total_value = 0;
         double sigma = 0.16;
         double h = 0.01;
         

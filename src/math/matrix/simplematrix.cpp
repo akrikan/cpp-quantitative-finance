@@ -9,7 +9,7 @@ SimpleMatrix<Type> :: SimpleMatrix(){};
 
 template <typename Type>
 SimpleMatrix<Type> :: SimpleMatrix(const int& rows, const int& columns ,const Type& val){
-    for (int i ;i< rows;i++){
+    for (int i = 0; i < rows; i++){
         std::vector<Type> col_vec(columns,val);
         mat.push_back(col_vec);
     }

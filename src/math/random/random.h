@@ -11,7 +11,7 @@ protected:
     
 public:
     RandomNumberGenerator(unsigned long _num_draws, unsigned long _init_seed)
-        : num_draws(_num_draws), init_seed(_init_seed), cur_seed(_init_seed) {};
+        : init_seed(_init_seed), cur_seed(_init_seed), num_draws(_num_draws) {};
     virtual ~RandomNumberGenerator() {};
 
     virtual unsigned long get_random_seed() const { return cur_seed; }
