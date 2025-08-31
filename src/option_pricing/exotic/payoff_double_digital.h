@@ -1,7 +1,7 @@
 #ifndef __PAYOFF_DOUBLE_DIGITAL_H
 #define __PAYOFF_DOUBLE_DIGITAL_H
 
-#include "payoff.h"
+#include "../vanilla/payoff.h"
 class PayoffDoubleDigital : public PayOff{
 
 private:
