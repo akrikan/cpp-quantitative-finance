@@ -1,0 +1,47 @@
+# Compiled Object files
+*.o
+*.obj
+
+# Executables
+*.exe
+interview_demo
+main_spx_test
+main_library_demo
+chap3
+chap4
+chap5
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Output directories
+output/
+build/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# CSV output files
+*.csv
+
+# Temporary files
+*.tmp
+*.temp
+
+# Core dumps
+core.*
